@@ -1,0 +1,7 @@
+  - hosts: windows_servers
+    roles:
+      - role: ansible-windows-updates
+        windows_updates_categories:
+          - "CriticalUpdates"
+          - "SecurityUpdates"
+        windows_updates_reboot: true
